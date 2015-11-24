@@ -1,5 +1,4 @@
-var express = require("express");
-var app = express();
+var express = require("express");var app = express();
 var combine = require('./modules/combine.js');
 var convert = require('./modules/convert.js');
 var random = require('./modules/random.js');
@@ -8,10 +7,12 @@ var path = require('path');
 // always use__dirname plus the directory
 app.use('/static', express.static(__dirname + '/static'));
 
+//index.html
 app.get('/', function (req, res, next) {
 res.sendFile(path.join(__dirname + '/index.html'));
 });
 
+//balance sends function from ./modules/combine.js
 app.get('/balance', function(req, res, next){
 res.send(combine.accountBalance() + ""  + combine.combine(100,1000000));
 });

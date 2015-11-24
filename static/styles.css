@@ -2,7 +2,56 @@ body {
   width: auto;
   font-family: "Hiragino Sans", sans-serif;
 }
-
+header {
+  width: 1000px;
+  padding: 10px;
+  margin: 10px auto;
+}
+header h1 {
+  text-align: center;
+}
 .display {
-  color:red;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-align: center;
+  width: 800px;
+  height: 100px;
+  padding: 20px;
+  color: red;
+  margin: 10px auto;
+}
+.giphy {
+  width: 800px;
+  margin: auto;
+  text-align: center;
+}
+.butt {
+  width: 400px;
+  padding: 10px;
+  margin: 10px auto;
+}
+#randombutt {
+  background: #4ac15a;
+  border-radius: 36px;
+  color: white;
+  cursor: pointer;
+  display: inline;
+  font-size: 18px;
+  padding: 12px 45px;
+  text-transform: none;
+  transition: all 100ms ease-in-out;
+  width: 400px;
+  margin: 50px auto;
+}
+#randombutt:hover {
+  opacity: .5;
+  border: none;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
+footer {
+  width: 800x;
+  text-align: center;
 }
